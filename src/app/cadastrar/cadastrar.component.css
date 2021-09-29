@@ -1,0 +1,42 @@
+.container-fluid{
+  width: 100%;
+  height: 90vh;
+
+  background-image: url('https://i.imgur.com/8OCBprE.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-blue{
+  background-color: #17223A;
+  height: 90vh;
+}
+
+img{
+  margin: 3rem 0 0 4rem;
+}
+
+h1 span{
+    display: block;
+}
+label span{
+  color: #d89e0a;
+}
+button{
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 55px;
+  border: 2px solid #d89e0a;
+  padding: .2rem 4rem .2rem 4rem;
+}
+.my-bg{
+  color: #d89e0a;
+}
+.my-ml{
+  margin-left: 1.3rem;
+}
+hr{
+  margin: 0;
+  padding: 0;
+}

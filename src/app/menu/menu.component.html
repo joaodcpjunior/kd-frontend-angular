@@ -1,0 +1,72 @@
+<div class="container-fluid p-0 bg-light fixed-top">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="yellow">Knowledge Domain - KD</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <button class="btn ml-2 my-2 my-sm-0 hover" type="submit">
+                  <img src="https://i.imgur.com/YG3PEoA.png" alt="lua" width="18px">
+                </button>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn ml-2 my-2 my-sm-0 hover" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="https://i.imgur.com/16n0G2h.png" alt="user" width="18px">
+                  </button>
+                  <div class="dropdown-menu">
+                    <form class="px-3 py-2">
+                      <div class="form-group">
+                        <label for="email" class="font-weight-bold">E-mail</label>
+                        <input [(ngModel)]="userLogin.email" type="email" name="email" class="form-control" id="email"
+                          placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="font-weight-bold">Senha</label>
+                        <input [(ngModel)]="userLogin.senha" type="password" name="password" class="form-control" id="email"
+                          placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Manter conectado
+                        </label>
+                      </div>
+                      <button type="submit" class="btn centro btn-light font-weight-bold" (click)="entrar()">Entrar</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLink='/cadastrar'>Novo por aqui? Cadastre-se</a>
+                    <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <button class="btn ml-2 my-2 my-sm-0 hover" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="https://i.imgur.com/37JDMXo.png" alt="menu" width="18px">
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" type="button" href="#inicio">Home</a>
+                    <a class="dropdown-item" type="button" href="#sobre-nos">Sobre-nos</a>
+                    <a class="dropdown-item" type="button" href="#contato">Contato</a>
+                    <a class="dropdown-item" type="button" href="#equipe">Equipe</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr class="p-0 m-0">
+    </div>
+  </div>
+</div>

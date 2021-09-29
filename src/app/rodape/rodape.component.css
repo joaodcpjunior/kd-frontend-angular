@@ -1,0 +1,45 @@
+.container-fluid{
+    background-color: #28395e;
+    width: 100%;
+}
+
+a{
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sol{
+    color: #FDC209;
+}
+
+/*Ondas*/
+.wave{
+  background: white;
+  height: 20px;
+  position: relative;
+}
+.wave::before, .wave::after{
+  border-bottom: 5px solid #28395e;
+}
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  background-size: 20px 40px;
+  background-image: radial-gradient(circle at 10px -15px, transparent 20px, #28395e 21px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background-size: 40px 40px;
+  background-image:
+    radial-gradient(circle at 10px 26px, #28395e 20px, transparent 21px);
+}

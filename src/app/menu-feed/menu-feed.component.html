@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link font-weight-bold" routerLink='/feed'>Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" routerLink='/configuracao'>Configuração</a>
+                  <a class="dropdown-item" routerLink='/contato'>Contato</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" routerLink='/sobre-nos'>Sobre a KD</a>
+                </div>
+              </li>
+            </ul>
+            <a class="navbar-brand mr-auto font-weight-bold" routerLink='/feed'>Knowledge Domain - KD</a>
+            <div class="form-inline my-2 my-lg-0">
+              <button class="btn my-2 my-sm-0 font-weight-bold" type="submit" (click)='sair()' routerLink='/inicio'>Sair</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<hr class="m-0 p-0">

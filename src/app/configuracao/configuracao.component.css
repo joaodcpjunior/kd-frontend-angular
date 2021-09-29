@@ -1,0 +1,27 @@
+hr{
+  color: blue;
+  border: 2px solid blue;
+  margin: 0 9rem 0 1.5rem;
+}
+
+.btn-editar{
+  border: 2px solid rgb(102, 102, 209);
+  border-radius: 40px;
+
+  background-color: rgb(102, 102, 209);
+  color: aliceblue;
+
+  font-weight: 600;
+  padding: 5px 30px 5px 30px;
+}
+
+.btn-cancelar{
+  border: 2px solid rgb(209, 189, 102);
+  border-radius: 40px;
+
+  background-color: rgb(209, 189, 102);
+  color: aliceblue;
+
+  font-weight: 600;
+  padding: 5px 30px 5px 30px;
+}

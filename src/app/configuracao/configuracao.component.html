@@ -1,0 +1,74 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5 border-right">
+      <div class="container">
+
+        <h5 class="mt-4">Configuração</h5>
+        <h4 class="ml-4">Configuração gerais da conta</h4>
+        <hr>
+
+        <div class="text-center mt-5">
+          <img src={{user.foto}} alt="foto usuário" class="img-fluid rounded-circle" width="200rem">
+          <h4 class="mt-4">{{user.nome}}</h4>
+          <h4>{{user.descricao}}</h4>
+          <h5>{{user.bio}}</h5>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="container">
+        <form class="p-5">
+          <div class="row">
+            <div class="col">
+
+              <div class="form-group">
+                <label for="nome" class="textBold">Nome</label>
+                <input [(ngModel)]="user.nome" class="form-control border border-secondary" type="text" name="nome"
+                  id="nome" placeholder={{user.nome}}>
+              </div>
+            </div>
+            <div class="col">
+
+              <div class="form-group">
+                <label for="descricao" class="textBold">Descrição</label>
+                <input [(ngModel)]="user.descricao" class="form-control border border-secondary" type="text"
+                  name="descricao" id="descricao" placeholder={{user.descricao}}>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="foto" class="textBold">Link da foto de perfil</label>
+            <input [(ngModel)]="user.foto" class="form-control border border-secondary" type="text" name="foto"
+              id="foto" placeholder={{user.foto}}>
+          </div>
+
+          <div class="form-group">
+            <label for="bio" class="textBold">Bio</label>
+            <textarea [(ngModel)]="user.bio" name="bio" class="form-control border border-secondary" id="bio"
+              rows="5"></textarea>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label textBold" for="exampleCheck1"><span>Sou um Voluntario
+                (Criador de conteúdo)</span></label>
+          </div>
+
+          <div class="form-inline mt-3 justify-content-center">
+            <div class="">
+              <button type="submit" class="btn btn-editar ml-3 my-1"
+                (click)='atualizar()'>Atualizar</button>
+            </div>
+
+            <div class="">
+              <button type="submit" class="btn btn-cancelar ml-3 my-1"
+                (click)='cancelar()'>Cancelar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
